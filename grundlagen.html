@@ -111,14 +111,29 @@
             </div>
             <h2>Aktien analysieren</h2>
             <p>Zwei Hauptmethoden:</p>
-            <div class="analyse-methoden">
-              <div class="methode">
-                <h3>Fundamentalanalyse</h3>
-                <p>Bewertung von Geschäftsmodell, Bilanzkennzahlen und Marktposition</p>
-              </div>
-              <div class="methode">
-                <h3>Technische Analyse</h3>
-                <p>Auswertung von Kursverläufen und Handelsvolumen</p>
+            <div class="analyse-methoden-container" id="horizontal-scroll-container">
+              <div class="analyse-methoden-scroll">
+                <div class="analyse-methoden">
+                  <div class="methode">
+                    <h3><i class="fas fa-chart-pie"></i> Fundamentalanalyse</h3>
+                    <p>Detaillierte Bewertung von Geschäftsmodell, Bilanzkennzahlen (KGV, KBV, KUV), Marktposition und Managementqualität. Ermittelt den inneren Wert eines Unternehmens.</p>
+                  </div>
+                  
+                  <div class="methode">
+                    <h3><i class="fas fa-chart-line"></i> Technische Analyse</h3>
+                    <p>Analyse historischer Kursverläufe, Handelsvolumen und Chartformationen. Nutzt Indikatoren wie gleitende Durchschnitte, RSI und MACD für Prognosen.</p>
+                  </div>
+                  
+                  <div class="methode">
+                    <h3><i class="fas fa-people-arrows"></i> Behavioral Finance Analyse</h3>
+                    <p>Untersucht psychologische Faktoren und irrationales Anlegerverhalten. Identifiziert kognitive Verzerrungen wie Herdenverhalten, Overconfidence und Verlustaversion, die Märkte beeinflussen.</p>
+                  </div>
+
+                  <div class="methode">
+                    <h3><i class="fas fa-brain"></i> Sentiment-Analyse</h3>
+                    <p>Auswertung von Marktstimmung durch News, Social Media und Anlegerverhalten. Misst die psychologische Marktlage.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -164,7 +179,6 @@
                 <strong>Dividendenaristokraten:</strong> Unternehmen mit langen Ausschüttungstraditionen
               </div>
             </div>
-            <div class="dividenden-chart"></div>
           </div>
         </div>
       </div>
@@ -226,6 +240,7 @@
     </div>
   </footer>
 
+  <script src="lib/js/horizontal-scroll.js"></script>
   <script src="lib/js/script.js"></script>
 </body>
 </html>

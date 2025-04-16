@@ -1,0 +1,4 @@
+.env
+config.js
+secrets.json
+*.key

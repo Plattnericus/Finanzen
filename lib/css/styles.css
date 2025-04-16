@@ -11,6 +11,24 @@
     --warning-color: #f8961e;
     --font-main: 'Inter', sans-serif;
   }
+  :-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--bg-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 6px;
+    border: 3px solid var(--bg-color);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+  }
   
   * {
     margin: 0;
@@ -1580,23 +1598,147 @@
   color: var(--accent-color);
 }
 
+#horizontal-scroll-container::-webkit-scrollbar {
+  height: 10px;
+  display: none;
+}
+
+#horizontal-scroll-container::-webkit-scrollbar-track {
+  background: var(--bg-color);
+  border-radius: 5px;
+  margin: 0 20px;
+}
+
+#horizontal-scroll-container::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 5px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+#horizontal-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+
+.analyse-methoden-container {
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 30px 0;
+  margin: 40px 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
+  overscroll-behavior-x: contain;
+  scrollbar-color: var(--accent-color) var(--bg-color);
+  scrollbar-width: thin;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  cursor: grab;
+  -webkit-overflow-scrolling: touch;
+}
+
 .analyse-methoden {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  margin-top: 20px;
+  display: flex;
+  gap: 25px;
+  padding: 10px 5%;
+  width: max-content;
+  display: inline-flex;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.analyse-methoden-container:hover {
+  cursor: grab;
+}
+
+.analyse-methoden-container:active {
+  cursor: grabbing;
+}
+
+.analyse-methoden-scroll {
+  display: inline-flex;
+  gap: 20px;
+  padding: 0 10px;
 }
 
 .methode {
-  background-color: var(--bg-color);
-  padding: 15px;
-  border-radius: 8px;
+  min-width: 280px;
+  max-width: 400px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
+}
+
+.methode:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 .methode h3 {
-  font-size: 1rem;
-  margin-bottom: 8px;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
   color: var(--accent-color);
+  display: flex;
+  align-items: center;
+}
+
+.methode h3 i {
+  margin-right: 12px;
+  font-size: 1.4rem;
+}
+
+.methode p {
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.analyse-methoden-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.analyse-methoden-container::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+
+.analyse-methoden-container::-webkit-scrollbar-track {
+  background: var(--bg-color);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .methode {
+    min-width: 240px;
+    padding: 20px;
+  }
+  
+  .analyse-methoden-container {
+    height: auto;
+  }
+
+  .analyse-methoden {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .methode {
+    min-width: 85vw;
+    max-width: 85vw;
+  }
+  
+  .methode h3 {
+    font-size: 1.1rem;
+  }
 }
 
 .risiko-skala {
