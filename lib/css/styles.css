@@ -1222,6 +1222,514 @@
   background-color: var(--secondary-color);
 }
 
+/* Kontakt-Sektion */
+.contact-section {
+  padding: 60px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.contact-info {
+  padding-right: 30px;
+}
+
+.contact-text {
+  color: rgba(248, 249, 250, 0.8);
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.info-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.info-icon i {
+  color: white;
+  font-size: 20px;
+}
+
+.info-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.info-content a, .info-content p {
+  color: rgba(248, 249, 250, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-content a:hover {
+  color: var(--accent-color);
+}
+
+.contact-social {
+  margin-top: 50px;
+}
+
+.contact-social h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.contact-social .social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-social .social-links a {
+  color: var(--text-color);
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.contact-social .social-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Kontaktformular */
+.contact-form {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input {
+  width: auto;
+  margin-right: 10px;
+}
+
+.checkbox-group label {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+/* Map-Sektion */
+.map-section {
+  padding: 60px 0;
+}
+
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom-Popup-Design */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: var(--background-secondary, #1e1e1e);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: var(--text-color, #fff);
+  font-family: 'Inter', sans-serif;
+}
+
+.popup-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+#closePopup {
+  padding: 10px 20px;
+  background: var(--primary-color, #007BFF);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+#closePopup:hover {
+  background: var(--primary-color-dark, #0056b3);
+}
+
+/* Impressum-Spezifische Styles */
+.impressum-section {
+  padding: 60px 0;
+}
+
+.impressum-container {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.impressum-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+  color: var(--accent-color);
+}
+
+.impressum-content {
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  color: rgba(248, 249, 250, 0.9);
+}
+
+.impressum-contact {
+  background-color: rgba(72, 149, 239, 0.1);
+  border-left: 3px solid var(--accent-color);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Datenschutz-Spezifische Styles */
+.datenschutz-section {
+  padding: 60px 0;
+}
+
+.datenschutz-container {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.datenschutz-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+  color: var(--accent-color);
+}
+
+.datenschutz-content {
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  color: rgba(248, 249, 250, 0.9);
+}
+
+.datenschutz-list {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.datenschutz-list li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.datenschutz-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+.datenschutz-update {
+  font-style: italic;
+  color: rgba(248, 249, 250, 0.6);
+  text-align: right;
+  margin-top: 40px;
+}
+
+/* Grundlagen-Styles */
+.grundlagen-section {
+  padding: 60px 0;
+}
+
+.grundlagen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.grundlagen-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.grundlagen-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.grundlagen-icon {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.grundlagen-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--accent-color);
+}
+
+.grundlagen-card p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.grundlagen-list {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.grundlagen-list li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.grundlagen-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+.grundlagen-beispiel {
+  background-color: rgba(72, 149, 239, 0.1);
+  border-left: 3px solid var(--accent-color);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 0 6px 6px 0;
+}
+
+.grundlagen-beispiel h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.grundlagen-tip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+}
+
+.analyse-methoden {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.methode {
+  background-color: var(--bg-color);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.methode h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--accent-color);
+}
+
+.risiko-skala {
+  margin-top: 20px;
+}
+
+.risiko-bar {
+  height: 10px;
+  display: inline-block;
+}
+
+.risiko-niedrig {
+  width: 30%;
+  background-color: #4cc9f0;
+  border-radius: 5px 0 0 5px;
+}
+
+.risiko-mittel {
+  width: 40%;
+  background-color: #4895ef;
+}
+
+.risiko-hoch {
+  width: 30%;
+  background-color: #f72585;
+  border-radius: 0 5px 5px 0;
+}
+
+.risiko-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+.dividenden-glossar {
+  margin: 20px 0;
+}
+
+.glossar-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: var(--bg-color);
+  border-radius: 6px;
+}
+
+.dividenden-chart {
+  height: 100px;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 60px 0;
+  background-color: var(--card-bg);
+  margin-top: 40px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .grundlagen-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .analyse-methoden {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .datenschutz-container {
+    padding: 30px 20px;
+  }
+  
+  .datenschutz-subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .impressum-container {
+    padding: 30px 20px;
+  }
+  
+  .impressum-subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .contact-info {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .info-item {
+    flex-direction: column;
+  }
+  
+  .info-icon {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form {
+    padding: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .faq-question {
     padding: 15px 0;

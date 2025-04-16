@@ -3,28 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aktienwissen - Grundlagen</title>
+  <title>Aktien Grundlagen | AktienTracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="lib/css/styles.css">
   <link rel="stylesheet" href="lib/css/dark-mode.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="lib/img/logo.svg" sizes="32x32" type="image/svg+xml">
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="header-inner">
-        <a href="index.html" class="logo">Aktien<span>Wissen</span></a>
+        <a href="index.html" class="logo">
+          <i class="fas fa-chart-line logo-icon"></i>
+          <span>Aktien<span>Tracker</span></span>
+        </a>
         <nav class="nav">
           <ul class="nav-list">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="grundlagen.html" class="nav-link active">Grundlagen</a></li>
-            <li class="nav-item"><a href="strategien.html" class="nav-link">Strategien</a></li>
-            <li class="nav-item"><a href="tools.html" class="nav-link">Tools</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+            <li class="nav-item"><a href="kurse.html" class="nav-link"><i class="fas fa-euro-sign"></i> Kurse</a></li>
+            <li class="nav-item"><a href="analysen.html" class="nav-link"><i class="fas fa-chart-bar"></i> Analysen</a></li>
+            <li class="nav-item"><a href="grundlagen.html" class="nav-link active"><i class="fas fa-graduation-cap"></i> Grundlagen</a></li>
+            <li class="nav-item"><a href="faq.html" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
           </ul>
-          <button class="theme-toggle" id="themeToggle">
-            <span class="theme-icon"></span>
-          </button>
+          <div class="meta-nav">
+            <a href="kontakt.html" class="meta-link"><i class="fas fa-envelope"></i></a>
+            <a href="impressum.html" class="meta-link"><i class="fas fa-info-circle"></i></a>
+            <a href="datenschutz.html" class="meta-link"><i class="fas fa-shield-alt"></i></a>
+            <button class="theme-toggle" id="themeToggle">
+              <i class="fas fa-moon theme-icon"></i>
+            </button>
+          </div>
         </nav>
         <button class="burger" id="burger">
           <span class="burger-line"></span>
@@ -36,68 +47,136 @@
   </header>
 
   <main class="main">
-    <section class="page-header">
+    <nav class="breadcrumbs">
       <div class="container">
-        <h1 class="page-title">Aktien-Grundlagen</h1>
-        <p class="page-subtitle">Alles, was Sie wissen müssen, um mit dem Investieren zu beginnen</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>Grundlagen</li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="grundlagen-section">
+      <div class="container">
+        <h1 class="section-title">Aktien Grundwissen</h1>
+        <p class="section-subtitle">Alles was Sie über Aktien und Börse wissen müssen</p>
+        
+        <div class="grundlagen-grid">
+          <div class="grundlagen-card">
+            <div class="grundlagen-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h2>Was sind Aktien?</h2>
+            <p>Aktien repräsentieren Anteile an einem Unternehmen. Als Aktionär werden Sie Miteigentümer und profitieren von Kursgewinnen und Dividenden.</p>
+            <div class="grundlagen-beispiel">
+              <h3>Beispiel:</h3>
+              <p>Wenn Sie 1 Aktie von Apple besitzen, sind Sie zu einem winzigen Teil (≈0,0000006%) Eigentümer des Unternehmens.</p>
+            </div>
+          </div>
+  
+          <div class="grundlagen-card">
+            <div class="grundlagen-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h2>Aktienkurse verstehen</h2>
+            <p>Der Aktienkurs wird durch Angebot und Nachfrage bestimmt. Wichtige Kennzahlen:</p>
+            <ul class="grundlagen-list">
+              <li><strong>KGV (Kurs-Gewinn-Verhältnis):</strong> Preis im Verhältnis zum Gewinn</li>
+              <li><strong>Dividendenrendite:</strong> Jährliche Dividende ÷ Aktienkurs</li>
+              <li><strong>Marktkapitalisierung:</strong> Aktienkurs × Anzahl Aktien</li>
+            </ul>
+          </div>
+
+          <div class="grundlagen-card">
+            <div class="grundlagen-icon">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <h2>Börsenhandel</h2>
+            <p>So funktioniert der Handel:</p>
+            <ol class="grundlagen-list">
+              <li>Order über Broker platzieren</li>
+              <li>Order wird an Börse weitergeleitet</li>
+              <li>Zusammenführung mit Gegenorder</li>
+              <li>Ausführung zum bestmöglichen Preis</li>
+            </ol>
+            <div class="grundlagen-tip">
+              <i class="fas fa-lightbulb"></i>
+              <p>Market-Orders werden sofort ausgeführt, Limit-Orders nur zum festgelegten Preis.</p>
+            </div>
+          </div>
+
+          <div class="grundlagen-card">
+            <div class="grundlagen-icon">
+              <i class="fas fa-search-dollar"></i>
+            </div>
+            <h2>Aktien analysieren</h2>
+            <p>Zwei Hauptmethoden:</p>
+            <div class="analyse-methoden">
+              <div class="methode">
+                <h3>Fundamentalanalyse</h3>
+                <p>Bewertung von Geschäftsmodell, Bilanzkennzahlen und Marktposition</p>
+              </div>
+              <div class="methode">
+                <h3>Technische Analyse</h3>
+                <p>Auswertung von Kursverläufen und Handelsvolumen</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grundlagen-card">
+            <div class="grundlagen-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h2>Risikomanagement</h2>
+            <p>Wichtige Grundregeln:</p>
+            <ul class="grundlagen-list">
+              <li>Nur investieren, was Sie verlieren können</li>
+              <li>Portfolio diversifizieren</li>
+              <li>Stop-Loss Orders nutzen</li>
+              <li>Emotionen kontrollieren</li>
+            </ul>
+            <div class="risiko-skala">
+              <div class="risiko-bar risiko-niedrig"></div>
+              <div class="risiko-bar risiko-mittel"></div>
+              <div class="risiko-bar risiko-hoch"></div>
+              <div class="risiko-labels">
+                <span>Anleihen</span>
+                <span>Blue Chips</span>
+                <span>Startups</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grundlagen-card">
+            <div class="grundlagen-icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h2>Dividenden erklärt</h2>
+            <p>Gewinnausschüttungen an Aktionäre. Wichtige Begriffe:</p>
+            <div class="dividenden-glossar">
+              <div class="glossar-item">
+                <strong>Ex-Tag:</strong> Stichtag für Dividendenberechtigung
+              </div>
+              <div class="glossar-item">
+                <strong>Ausschüttungsquote:</strong> Anteil des Gewinns als Dividende
+              </div>
+              <div class="glossar-item">
+                <strong>Dividendenaristokraten:</strong> Unternehmen mit langen Ausschüttungstraditionen
+              </div>
+            </div>
+            <div class="dividenden-chart"></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="content-section">
+    <section class="cta-section">
       <div class="container">
-        <div class="content-grid">
-          <article class="content-card">
-            <h2 class="content-title">Was sind Aktien?</h2>
-            <p class="content-text">Eine Aktie ist ein Wertpapier, das einen Anteil am Grundkapital einer Aktiengesellschaft verbrieft. Der Aktionär wird damit Miteigentümer des Unternehmens und hat bestimmte Rechte, wie das Recht auf Gewinnbeteiligung (Dividende) und das Stimmrecht auf der Hauptversammlung.</p>
-            <div class="content-highlight">
-              <p>Der Wert einer Aktie wird durch Angebot und Nachfrage an der Börse bestimmt und spiegelt die Erwartungen der Anleger an die zukünftige Entwicklung des Unternehmens wider.</p>
-            </div>
-          </article>
-
-          <article class="content-card">
-            <h2 class="content-title">Aktienarten</h2>
-            <div class="content-table">
-              <div class="table-row table-header">
-                <div class="table-cell">Art</div>
-                <div class="table-cell">Beschreibung</div>
-                <div class="table-cell">Rechte</div>
-              </div>
-              <div class="table-row">
-                <div class="table-cell">Stammaktien</div>
-                <div class="table-cell">Normale Aktien</div>
-                <div class="table-cell">Dividende, Stimmrecht</div>
-              </div>
-              <div class="table-row">
-                <div class="table-cell">Vorzugsaktien</div>
-                <div class="table-cell">Aktien ohne Stimmrecht</div>
-                <div class="table-cell">Höhere Dividende</div>
-              </div>
-              <div class="table-row">
-                <div class="table-cell">Inhaberaktien</div>
-                <div class="table-cell">Auf den Inhaber lautend</div>
-                <div class="table-cell">Einfacher Handel</div>
-              </div>
-              <div class="table-row">
-                <div class="table-cell">Namensaktien</div>
-                <div class="table-cell">Auf den Namen lautend</div>
-                <div class="table-cell">Meist mehr Rechte</div>
-              </div>
-            </div>
-          </article>
-
-          <article class="content-card">
-            <h2 class="content-title">Börsenindizes</h2>
-            <p class="content-text">Ein Börsenindex ist eine Kennziffer, die die Entwicklung ausgewählter Aktienkurse abbildet. Indizes dienen als Stimmungsbarometer für die Entwicklung eines Marktes oder einer Branche.</p>
-            <ul class="content-list">
-              <li><strong>DAX:</strong> 40 größten deutschen Unternehmen</li>
-              <li><strong>MDAX:</strong> 50 mittelgroße deutsche Unternehmen</li>
-              <li><strong>SDAX:</strong> 50 kleine deutsche Unternehmen</li>
-              <li><strong>TecDAX:</strong> 30 größte Technologieunternehmen</li>
-              <li><strong>Dow Jones:</strong> 30 große US-Unternehmen</li>
-              <li><strong>S&P 500:</strong> 500 große US-Unternehmen</li>
-              <li><strong>NASDAQ-100:</strong> 100 große Tech-Unternehmen</li>
-            </ul>
-          </article>
+        <h2>Bereit zu investieren?</h2>
+        <p>Starten Sie jetzt mit Ihrem ersten Depot und nutzen Sie unser Wissen.</p>
+        <div class="cta-buttons">
+          <a href="kurse.html" class="btn btn-primary">Aktienkurse ansehen</a>
+          <a href="analysen.html" class="btn btn-outline">Analysen studieren</a>
         </div>
       </div>
     </section>
@@ -107,29 +186,42 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <h3 class="footer-title">AktienWissen</h3>
-          <p class="footer-text">Ihr Portal für fundierte Aktieninformationen und Investmentstrategien.</p>
+          <h3 class="footer-title">AktienTracker</h3>
+          <p class="footer-text">Ihr professioneller Begleiter für Aktieninvestments.</p>
+          <div class="social-links">
+            <a href="https://x.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
         <div class="footer-col">
-          <h3 class="footer-title">Quick Links</h3>
+          <h3 class="footer-title">Navigation</h3>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="grundlagen.html">Grundlagen</a></li>
-            <li><a href="strategien.html">Strategien</a></li>
-            <li><a href="tools.html">Tools</a></li>
+            <li><a href="kurse.html">Kurse</a></li>
+            <li><a href="analysen.html">Analysen</a></li>
+            <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h3 class="footer-title">Rechtliches</h3>
           <ul class="footer-links">
-            <li><a href="#">Impressum</a></li>
-            <li><a href="#">Datenschutz</a></li>
-            <li><a href="#">Haftungsausschluss</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="agb.html">AGB</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">Kontakt</h3>
+          <ul class="footer-links">
+            <li><a href="kontakt.html">Kontaktformular</a></li>
+            <li><a href="mailto:felix.plattner.qp@gmail.com">felix.plattner.qp@gmail.com</a></li>
+            <li>+39 389 880 6833</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="copyright">© 2023 AktienWissen. Alle Rechte vorbehalten.</p>
+        <p class="copyright">© 2025 AktienTracker. Alle Rechte vorbehalten.</p>
       </div>
     </div>
   </footer>
