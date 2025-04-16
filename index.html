@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AktienTracker - Live Kurse & Analysen</title>
+  <title>AktienTracker - Startseite</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="lib/css/styles.css">
   <link rel="stylesheet" href="lib/css/dark-mode.css">
@@ -70,6 +70,15 @@
       </div>
     </section>
 
+    <section class="watchlist-section" id="watchlistSection">
+      <div class="container">
+        <h2 class="section-title">Meine Watchlist</h2>
+        <div class="watchlist-grid" id="watchlistGrid">
+          <!-- Watchlist Items werden hier eingefügt -->
+        </div>
+      </div>
+    </section>
+
     <section class="market-indices">
       <div class="container">
         <h2 class="section-title">Marktindizes</h2>
@@ -124,28 +133,28 @@
             <div class="table-cell">Apple Inc.</div>
             <div class="table-cell">172.45</div>
             <div class="table-cell change positive">+1.23%</div>
-            <div class="table-cell"><button class="btn btn-small"><i class="fas fa-plus"></i> Watchlist</button></div>
+            <div class="table-cell"><button class="btn btn-small watchlist-btn" data-symbol="AAPL" data-name="Apple Inc."><i class="fas fa-plus"></i> Watchlist</button></div>
           </div>
           <div class="table-row">
             <div class="table-cell">MSFT</div>
             <div class="table-cell">Microsoft Corp.</div>
             <div class="table-cell">315.67</div>
             <div class="table-cell change positive">+0.78%</div>
-            <div class="table-cell"><button class="btn btn-small"><i class="fas fa-plus"></i> Watchlist</button></div>
+            <div class="table-cell"><button class="btn btn-small watchlist-btn" data-symbol="MSFT" data-name="Microsoft Corp."><i class="fas fa-plus"></i> Watchlist</button></div>
           </div>
           <div class="table-row">
             <div class="table-cell">TSLA</div>
             <div class="table-cell">Tesla Inc.</div>
             <div class="table-cell">245.32</div>
             <div class="table-cell change negative">-2.15%</div>
-            <div class="table-cell"><button class="btn btn-small"><i class="fas fa-plus"></i> Watchlist</button></div>
+            <div class="table-cell"><button class="btn btn-small watchlist-btn" data-symbol="TSLA" data-name="Tesla Inc."><i class="fas fa-plus"></i> Watchlist</button></div>
           </div>
           <div class="table-row">
             <div class="table-cell">AMZN</div>
             <div class="table-cell">Amazon.com Inc.</div>
             <div class="table-cell">128.76</div>
             <div class="table-cell change positive">+0.45%</div>
-            <div class="table-cell"><button class="btn btn-small"><i class="fas fa-plus"></i> Watchlist</button></div>
+            <div class="table-cell"><button class="btn btn-small watchlist-btn" data-symbol="AMZN" data-name="Amazon.com Inc."><i class="fas fa-plus"></i> Watchlist</button></div>
           </div>
         </div>
       </div>
