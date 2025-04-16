@@ -1,0 +1,29 @@
+[data-theme="light"] {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --accent-color: #4895ef;
+    --text-color: #212529;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+    --success-color: #4cc9f0;
+    --error-color: #f72585;
+    --warning-color: #f8961e;
+  }
+  
+  [data-theme="light"] .header {
+    background-color: rgba(248, 249, 250, 0.9);
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  [data-theme="light"] .theme-icon {
+    color: var(--text-color);
+  }
+  
+  [data-theme="light"] .burger-line {
+    background-color: var(--text-color);
+  }
+  
+  [data-theme="light"] .theme-toggle .fa-moon::before {
+    content: "\f185";
+  }
