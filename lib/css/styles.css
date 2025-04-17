@@ -310,13 +310,14 @@
   .search-box button:hover {
     background-color: var(--secondary-color);
   }
-  
+
   .hero-chart {
     position: absolute;
     right: 0;
+    margin-right: 15px;
     top: 50%;
     transform: translateY(-50%);
-    width: 50%;
+    width: 45%;
     height: 300px;
   }
   
@@ -416,7 +417,11 @@
   }
   
   .table-cell {
+    align-items: center;
     padding: 5px 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 40px;
   }
   
   .change.positive {
@@ -1713,6 +1718,82 @@
 .analyse-methoden-container::-webkit-scrollbar-track {
   background: var(--bg-color);
   border-radius: 4px;
+}
+
+/* AGB-spezifische Styles */
+.agb-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.agb-section {
+  margin-bottom: 30px;
+}
+
+.agb-title {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.agb-subtitle {
+  font-size: 1.3rem;
+  color: var(--accent-color);
+  margin: 25px 0 15px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+.agb-text {
+  line-height: 1.7;
+  color: rgba(248, 249, 250, 0.9);
+}
+
+.agb-list {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.agb-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.agb-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+.agb-highlight {
+  background: rgba(72, 149, 239, 0.1);
+  border-left: 3px solid var(--accent-color);
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+@media (max-width: 768px) {
+  .agb-container {
+    padding: 25px;
+  }
+  
+  .agb-title {
+    font-size: 1.7rem;
+  }
+  
+  .agb-subtitle {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 768px) {
