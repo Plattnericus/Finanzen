@@ -421,7 +421,7 @@
     padding: 5px 0;
     margin-left: 15px;
     margin-right: 15px;
-    max-width: 40px;
+    min-width: 40px;
   }
   
   .change.positive {
